@@ -595,7 +595,7 @@ grid-column: span 6;
   }
   
   #content-text {
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
     grid-column: 1;
     display: flex;
