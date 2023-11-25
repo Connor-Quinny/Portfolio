@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+body {
+  margin: 30px;
+  font-family: "Poppins";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfcfc;
+  }
+
+.lottie2 {
+  width: 80px;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .navbar {
+    height: 80px;
+
+    background: transparent;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .nav-elements ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 60px;
+  }
+  
+  .nav-elements ul a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2f234f;
+    text-decoration: none;
+  }
+  
+  .nav-elements ul a.active {
+    color: #574c4c;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-elements ul a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #574c4c;
+  }
+  
+  @media (max-width: 900px) {
+    .nav-elements ul li:not(:last-child) {
+      margin-right: 30px;
+    }
+
+  }
+  
+  @media (max-width: 600px) {
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+    
+    .lottie2 {
+      width: 35px;
+    }
+
+    .nav-elements {
+      position: absolute;
+      right: 0;
+      top: 60px;
+      background-color: white;
+      width: 0px;
+      height: calc(100vh - 60px);
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+      
+    }
+  
+    .nav-elements.active {
+      width: 100vw;
+    }
+  
+    .nav-elements ul {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-elements ul a {
+      font-size: 20px;
+    }
+  
+    .nav-elements ul li {
+      margin-right: unset;
+      margin-top: 22px;
+    }
+  }
+
+
+
+
+
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: animatedBackground 15s ease infinite;
+    height: 100vh;
+
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+
+  .text-container, .img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    animation: fadeIn 1s ease-out forwards; /* 1s duration, 0.5s delay */
+    max-width: 750px;
+  }
+  
+  .text-container {
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align children to the start (left) */
+  }
+  
+  .text, .typed-text, .styled-button {
+    display: block; /* Make each item take up the full width */
+    margin: 10px 0; /* Add some vertical spacing between the items */
+    text-align: left; /* Align the text to the left */
+    margin-left: 25%;
+  }
+  
+.text {
+  font-size: 36px;
+}
+
+.styled-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff; /* Example button color */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+  .typed-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 3px solid; */
+    animation: typing-backspacing 4s steps(40, end) infinite;
+    width: 0; 
+    font-size: 28px;
+  }
+  
+  .lottie {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1100px) {
+    .home-container {
+      flex-direction: column;
+    }
+
+    .text-container {
+      text-align: left;
+      align-items: left;
+      margin-right: 100px;
+    }
+
+    .text {
+      font-size: 30px;
+    }
+
+    .typed-text {
+      font-size: 24px;
+    }
+
+
+  }
+  
+  @keyframes typing-backspacing {
+    10%, 90% { width: 0% }
+    30%, 70% { width: 100% }
+  }
+  

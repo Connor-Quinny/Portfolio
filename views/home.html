@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <lottie-player src="https://lottie.host/4c334da5-ba84-4595-ad0d-abd38115ee87/1Vcsb6iBuu.json" background="transparent"  speed="1" loop autoplay class="lottie2"></lottie-player>
+      </div>
+      <div class="menu-icon" id="menu-icon">
+        ☰ 
+      </div>
+      <div class="nav-elements" id="nav-elements">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>      
+  <div class='home-container'>
+        <div class='text-container'>
+          <div class='text'>Hi I'm Connor,</div>
+          <div class='typed-text' id='typed-text'>and I'm a Web Developer</div>
+          <button class='styled-button' onclick="viewPortfolio()">View Portfolio</button>
+        </div>
+        <div class='img-container' id='lottie-container'>
+          <lottie-player src="https://lottie.host/6587e40c-0b77-4dfb-94ca-8d448e1f8e39/2ZDIQfnQPa.json" background="transparent"  speed="1" loop autoplay class="lottie"></lottie-player>
+        </div>
+      </div>
+      <script src="/js/home.js"></script>
+</body>
+</html>
