@@ -76,11 +76,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
               newImg.src = techStackArray[i];
               newImg.classList.add('tech-stack-images');
-              newImg.style.width = '75px';  // Example: Set the width to 100 pixels
-              newImg.style.height = '75px';   // Example: Let the height adjust proportionally
+              newImg.style.width = '50px';  // Example: Set the width to 100 pixels
+              newImg.style.height = '50px';   // Example: Let the height adjust proportionally
   
               const caption = document.createElement('p');
               caption.textContent = techStackCaptions[productTitle][i];
+              caption.style.fontSize = '16px';
   
               newDiv.appendChild(newImg);
               newDiv.appendChild(caption);
