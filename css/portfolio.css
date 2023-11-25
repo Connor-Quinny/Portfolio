@@ -586,7 +586,7 @@ grid-column: span 6;
 @media (max-width: 768px) {
 
   #content-title {
-    font-size: 26px;
+    font-size: 24px;
     text-align: left;
     /* margin-bottom: -30px; */
     grid-row: 1;
@@ -595,7 +595,7 @@ grid-column: span 6;
   }
   
   #content-text {
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
     grid-column: 1;
     display: flex;
@@ -616,7 +616,7 @@ grid-column: span 6;
   }
 
   .background-container {
-    height: 220vh;
+    height: 240vh;
   }
 
 }
