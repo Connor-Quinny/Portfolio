@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   document.addEventListener('DOMContentLoaded', function() {
-    var texts = ['and I\'m a Web Developer', 'and I\'m a backend developer', 'and I\'m a react developer'];
+    var texts = ['and I\'m a Web Developer', 'and I\'m a Backend Developer', 'and I\'m a React Developer'];
     var textIndex = 0;
     var typedTextElement = document.getElementById('typed-text');
   

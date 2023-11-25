@@ -229,3 +229,13 @@ body {
     30%, 70% { width: 100% }
   }
   
+  @media (max-width: 768px) {
+
+    .text {
+      font-size: 32px;
+    }
+
+    .typed-text {
+      font-size: 22px;
+  }
+  }
